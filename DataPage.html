@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>DataPage</title>
+    <style>
+        /* Default styles */
+        div {
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .box {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .box-heading {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 700;
+            text-decoration: underline;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            margin-bottom: 20px;
+        }
+
+        .sensor-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .sensor-box {
+            width: calc(33.33% - 20px);
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-family: Inter;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        .sensor-box iframe {
+            width: 100%;
+            max-width: 100%;
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body style="background: #4A6A7C;">
+    <div class="container">
+        <a href="main.html" style="text-decoration: none; color: aliceblue;"><i class="fas fa-arrow-left"></i> Back</a>
+        <div class="box">
+            <div class="box-heading">Distance Data:</div>
+            <div class="sensor-container">
+                <div class="sensor-box">
+                    Ultrasonic
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2412448/widgets/791795"></iframe>
+                </div>
+                <div class="sensor-box">
+                    Infrared
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2412448/widgets/791802"></iframe>
+                </div>
+                <div class="sensor-box">
+                    IMU
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2412448/widgets/791799"></iframe>
+                </div>
+            </div>
+            <div class="sensor-container">
+                <div class="sensor-box">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2412448/widgets/791796"></iframe>
+                    Meters
+                </div>
+                <div class="sensor-box">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2412448/widgets/791805"></iframe>
+                    Meters
+                </div>
+                <div class="sensor-box">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2412448/widgets/791804"></iframe>
+                    Meters
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
